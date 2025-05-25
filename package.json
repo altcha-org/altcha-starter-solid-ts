@@ -9,7 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "altcha": "^2.0.0",
+    "altcha": "^2.0.2",
     "solid-js": "^1.9.7"
   },
   "devDependencies": {
