@@ -56,6 +56,7 @@ npm install altcha --save
 ```javascript
 // src/index.jsx or src/main.jsx
 import 'altcha';
+import type {} from 'altcha/types/jsx';
 ```
 
 5. Use the `<altcha-widget>` element in your component:
@@ -68,7 +69,7 @@ const ExampleComponent: Component = () => {
   return (
     <div>
       <h1>My Solid.js App with ALTCHA</h1>
-      <altcha-widget challengeurl="https://your-challenge-url.com"></altcha-widget>
+      <altcha-widget challenge="https://your-challenge-url.com"></altcha-widget>
     </div>
   );
 };
@@ -90,7 +91,7 @@ declare module 'solid-js' {
 
 ## Additional Configuration
 
-Ensure your `challengeurl` points to the endpoint where ALTCHA's proof-of-work challenge is processed. Customize the component attributes as needed based on your specific use case.
+Ensure your `challenge` points to the endpoint where ALTCHA's proof-of-work challenge is processed. Customize the component attributes as needed based on your specific use case.
 
 ## Conclusion
 

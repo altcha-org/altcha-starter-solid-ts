@@ -55,6 +55,7 @@ button:focus-visible {
 }
 
 form {
+  min-width: 320px;
   border: 2px solid #777;
   display: flex;
   gap: 1rem;

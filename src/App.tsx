@@ -4,6 +4,7 @@ import './App.css'
 
 // Importing altcha package will introduce a new element <altcha-widget>
 import 'altcha'
+import type {} from 'altcha/types/jsx';
 
 declare module 'solid-js' {
   namespace JSX {
@@ -39,11 +40,13 @@ function App() {
           </fieldset>
 
           <fieldset>
-            {/*Configure your `challengeurl` and remove the `test` attribute, see docs: https://altcha.org/docs/website-integration/#using-altcha-widget */}
+            {/*Configure your `challenge` and remove the `test` attribute, see docs: https://altcha.org/docs/website-integration/#using-altcha-widget */}
             <altcha-widget
               style={{'--altcha-max-width': '100%'}}
-              debug
-              test
+              configuration={JSON.stringify({
+                debug: true,
+                test: true,
+              })}
             ></altcha-widget>
           </fieldset>
 
